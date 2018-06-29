@@ -10,13 +10,11 @@
   "name": "Currency Converted",
   "version": "v1",
 
-  "theme_color": "#ffffff",
+  "theme_color": "#00fc00",
   "default_locale": "en",
   "description": "An Alc Challenge ",
  
-  "bluetooth": {
-    "uuids": ["1105", "1006"]
-  },
+
 
   "short_name": "Clover Convert",
 
@@ -25,7 +23,7 @@
   {
     "src": "https://Seyikemi.github.io/CurrencyConverter/img/icon.png",
     "sizes": "192x192",
-    "type": "img/icon/png"
+    "type": "img/png"
   }
 
 ],
@@ -37,3 +35,4 @@
 
 
 }
+
