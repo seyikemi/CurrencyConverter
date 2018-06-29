@@ -2,11 +2,11 @@
 
   "author": "Seyikemi Sojirn",
   "background_color": "#ffffff",
-  "display": "fullscreen",
+  "display": "standalone",
   
 "orientation": "portrait",
 
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Currency Converted",
   "version": "v1",
 
@@ -29,10 +29,10 @@
 ],
 
 
-
 "start_url": "https://Seyikemi.github.io/CurrencyConverter/index.html"
 
 
 
 }
+
 
