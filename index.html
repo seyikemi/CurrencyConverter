@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My converter</title>
+    <link rel="shortcut icon" type="img/icon.png" href="img/icon.png" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="">
+    <link rel="manifest" href="manifest.json">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body style = "background-color: #e8e7e7" >
+
+    <!-- Start your project here-->
+    <div style="height: 100vh">
+        <div class="flex-center flex-column">
+            <div class = "converter_height card">
+                <div class = "div_image">
+                    <div class= "div_mask">
+                            <h5 class= "text-center pt-3 pb-3 white-text animated swing  " style = "font-weight:bolder" >Currency Convertor</h5>
+                            <div class = "mx-auto text-center ">
+                                <div class = " flex-center mx-auto my-round white">
+                                  
+                                    <h1 id= "converted_result" class = "animated rubberBand wow">0.00</h1>
+                                </div>
+                            </div>
+                    </div>
+                   
+
+                </div>
+                <div class = "formpad">
+                    <form>
+
+                        <div class="md-form mt-0 mb-0">
+                            <p class = "animated fadeInUp " data-wow-delay="0.2s">Enter an Amount </p>
+                            <input type="number" id="amount" class="form-control animated fadeInUp " data-wow-delay="0.3s" required>
+                   
+                        </div>
+                            
+                            <label class = "">From </label>
+                            <select class = "form-control  myselect animated fadeInUp " id = "convert_from" onchange="send_From_Value()" data-wow-delay="0.3s" name = "select_me">
+                                <option >-Select-a-Country</option>
+                          
+                            </select>
+                            <label class = "">To </label>
+                            <select class = "form-control myselect animated fadeInUp " id = "convert_to" onchange="send_To_Value(this)" data-wow-delay="0.3s">
+                                    <option>-Select-a-Country</option>
+                                 
+                            </select>
+                            <!-- <div class="loader text-center mx-auto" id = "loader"></div> -->
+                            <div class= "mx-auto text-center pt-2">
+                                    <button class = "btn btn-primary animated bounce wow" id = "convert_button" onclick="convert()">Convert</button>
+                            </div>
+                            <div class= "container pt-2">
+                                    <div class = "row">
+                                            <div class = "col-md-7">
+                                                    <p class = "pt-2">Rate <span id = "show_unit" class = "pl-2 badge badge-primary animated zoomIn wow" data-wow-delay="0.3s"></span></p>
+                                            </div>
+                                            <div class = "col-md-2">
+                                                    <img src = "img/logo1.png" style = "width:50px;">
+                                                   
+                                            </div>
+                                            <div class = "col-md-2">
+                                                    <img src = "img/logo2.png" style = "width:50px;">
+                                                   
+                                            </div>
+                                           
+                                    </div>
+                            </div>
+                        
+                            
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+  <script>
+  document.getElementById("convert_button").addEventListener("click", function(event){
+  event.preventDefault()
+  });</script>
+
+  
+<script type="text/javascript" src="js/idb.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+   
+
+  <script>
+//   $.ajax({  
+//     type: "POST",  
+//     url: "http://127.0.0.1:8888/",  
+//     data: dataString,  
+//     beforeSend: function() {
+//         $('#loader').show ;
+//     },
+//     complete: function() {
+//         $('#loader').hide ;
+//     },
+//     success: function(badges) {  
+//     $('#checkin-form').html("<div id='message'></div><div id='badges'></div>");  
+//     $('#message').html("<h2><img class=\"check-mark\" src=\"/static/images/check-mark.png\"/>You are checked in!</h2>");  
+//     $.each(badges, function(i,badge) {
+//       $('#badges').append("<h2>New Badge!</h2><p><img class='badge' src='"+badge.image_url+"'><span class='badge-title'>"+badge.name+"</span></p>");  
+</script> 
+
+
+</body>
+
+</html>

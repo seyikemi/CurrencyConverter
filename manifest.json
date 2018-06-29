@@ -1,0 +1,39 @@
+{
+
+  "author": "Seyikemi Sojirn",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  
+"orientation": "portrait",
+
+  "manifest_version": 1,
+  "name": "Currency Converted",
+  "version": "v1",
+
+  "theme_color": "#ffffff",
+  "default_locale": "en",
+  "description": "An Alc Challenge ",
+ 
+  "bluetooth": {
+    "uuids": ["1105", "1006"]
+  },
+
+  "short_name": "Clover Convert",
+
+"icons": [
+
+  {
+    "src": "https://Seyikemi.github.io/CurrencyConverter/img/icon.png",
+    "sizes": "192x192",
+    "type": "img/icon/png"
+  }
+
+],
+
+
+
+"start_url": "https://Seyikemi.github.io/CurrencyConverter/index.html"
+
+
+
+}
