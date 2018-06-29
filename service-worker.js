@@ -13,7 +13,7 @@ let cacheFiles = [
 	'./img/logo2.png',
 	'./font/roboto/Roboto-Bold.ttf',
 	'./css/mdb.min.css',
-
+	'./manifest.json',
 	'./css/style.css'
 	
 	
