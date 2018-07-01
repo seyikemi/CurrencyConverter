@@ -20,7 +20,7 @@
   "orientation": "portrait",
   "short_name": "Clover Convert",
   "start_url": "https://seyikemi.github.io/CurrencyConverter/index.html",
-  "theme_color": "#00fc00",
+  "theme_color": "#0000fc",
   "version": "0.1"
 
 }
