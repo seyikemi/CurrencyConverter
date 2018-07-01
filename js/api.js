@@ -51,6 +51,7 @@ send_To_Value = (s) => {
 
 
 convert =() => {
+    //if the user is offline
     if (!navigator.onLine) {
         alert ("You are currency offline, Please Check your internet connection and retry");
         } 
@@ -65,12 +66,13 @@ convert =() => {
         .then(response => response.json())
         .then(json_unit => {
            
-            let ddl = document.getElementById("convert_from");
-            let selectedValue = ddl.options[0].value;
+        let ddl = document.getElementById("convert_from");
+        let selectedValue = ddl.options[0].value;
         let unit = json_unit[`${from_value}_${to_value}`] ;
         let amount = document.getElementById("amount").value;
         converted_value = unit * amount ;
         // alert(isNaN(converted_value));
+        //checks if the user doesnt select any country
         if(isNaN(converted_value) || selectedValue === "-Select-a-Country" ){
            
             alert ("Select the Country From and To, to see correct conversion")
